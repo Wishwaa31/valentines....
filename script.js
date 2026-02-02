@@ -23,7 +23,7 @@ function handleNoClick() {
 }
 
 function handleYesClick() {
-  // Show GIF dynamically after clicking YES
+  // Add GIF dynamically after YES click
   const gifContainer = document.getElementById("gif-container");
   gifContainer.innerHTML = `
     <img 
@@ -33,7 +33,10 @@ function handleYesClick() {
     />
   `;
 
-  // Hide buttons after click
+  // Hide buttons to clean up the view
   document.querySelector(".yes-button").style.display = "none";
   document.querySelector(".no-button").style.display = "none";
+
+  // Optional: redirect to yes_page.html after 3 seconds
+  // setTimeout(() => { window.location.href = "yes_page.html"; }, 3000);
 }
