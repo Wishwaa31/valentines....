@@ -23,20 +23,6 @@ function handleNoClick() {
 }
 
 function handleYesClick() {
-  // Add GIF dynamically after YES click
-  const gifContainer = document.getElementById("gif-container");
-  gifContainer.innerHTML = `
-    <img 
-      src="https://media1.tenor.com/m/HTxTrwitNJ0AAAAC/samantha-dhanush.gif"
-      alt="Valentine GIF"
-      width="300"
-    />
-  `;
-
-  // Hide buttons to clean up the view
-  document.querySelector(".yes-button").style.display = "none";
-  document.querySelector(".no-button").style.display = "none";
-
-  // Optional: redirect to yes_page.html after 3 seconds
-  // setTimeout(() => { window.location.href = "yes_page.html"; }, 3000);
+  // Redirect to YES page
+  window.location.href = "yes_page.html";
 }
